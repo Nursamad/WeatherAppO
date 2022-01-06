@@ -15,7 +15,9 @@ import android.view.ViewGroup;
 import com.geektech.weatherapp.R;
 import com.geektech.weatherapp.databinding.FragmentSecondBinding;
 
+import dagger.hilt.android.AndroidEntryPoint;
 
+@AndroidEntryPoint
 public class SecondFragment extends Fragment {
 
     private NavController controller;

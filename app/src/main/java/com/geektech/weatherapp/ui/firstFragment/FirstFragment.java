@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
-
+@AndroidEntryPoint
 public class FirstFragment extends Fragment {
 
     private NavController controller;
@@ -92,6 +92,11 @@ public class FirstFragment extends Fragment {
             }
         });
 
+        clickItem();
+        setData();
+    }
+
+    private void clickItem() {
         binding.tvLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,8 +104,6 @@ public class FirstFragment extends Fragment {
                 navController.navigate(R.id.secondFragment);
             }
         });
-
-        setData();
     }
 
     private void setData() {
